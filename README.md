@@ -40,8 +40,10 @@ In the cepphaAI we're using the following frameworks:
 ## Training and saving the model:
 You can see the following [Kaggle Notebook]().
 ## Demo
-You can test our app on the following link : [cephaAI : streamlit app](https://mouhassine-badreddine-cephaai-main-pzom8x.streamlitapp.com/)
-![]([https://i.ibb.co/1fhg7mv/Animation-min.gif](https://i.ibb.co/1fhg7mv/Animation-min.gif))
+You can test our app on the following link : [cephaAI-streamlit-app](https://mouhassine-badreddine-cephaai-main-pzom8x.streamlitapp.com/)
+
+> ![]((https://i.ibb.co/1fhg7mv/Animation-min.gif)
+> 
 ## Reference
 ```
 @inproceedings{chen2019cephalometric,
