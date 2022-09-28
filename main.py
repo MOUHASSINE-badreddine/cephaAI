@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from predictor import get_predicted_heatmaps, regression_voting, AttrDict
 import numpy as np
 import streamlit as st
@@ -323,11 +322,3 @@ if uploaded_file is not None:
             st.title("Cephalometric data interpretation")
             InterpretationDf=pd.DataFrame.from_dict(interpretations,orient="index")
             st.table(InterpretationDf)
-
-
-
-
-#angles = getAngles(getLandmarksCoord('001.jpg')[0])
-#print(angles)
-#print(angleInterpretation(angles))
->>>>>>> f7c4412526e0fda9c644e978de22ebafbf852735
