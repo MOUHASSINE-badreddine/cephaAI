@@ -45,7 +45,7 @@ You can test our app on the following link : [cephaAI-streamlit-app](https://mou
 ![]((https://i.ibb.co/1fhg7mv/Animation-min.gif)
 ```
 ## Reference
-```
+
 @inproceedings{chen2019cephalometric,
   title={Cephalometric landmark detection by attentive feature pyramid fusion and regression-voting},
   author={Chen, Runnan and Ma, Yuexin and Chen, Nenglun and Lee, Daniel and Wang, Wenping},
@@ -54,4 +54,4 @@ You can test our app on the following link : [cephaAI-streamlit-app](https://mou
   year={2019},
   organization={Springer}
 }
-```
+
