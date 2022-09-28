@@ -3,7 +3,7 @@
 ## Introduction
 
 CephaAI is an streamlit based app, used for automated 2D cephalomtrical diagnosis using a deep learning model.
-  >* The cephalometrical analysis in cephaAI, start first detecting anatomical landmarks positions and calculating the angles to get the interpretations. CephaAI provide a vue of heatmaps produced by the model, those heatmaps show for each landmark the positions with high probablities to be that landmark.*
+  >The cephalometrical analysis in cephaAI, start first detecting anatomical landmarks positions and calculating the angles to get interpretations. CephaAI provide a vue of heatmaps produced by the model, those heatmaps show for each landmark the positions with high probablities to be that landmark.
 The model we're using on our app is the implementation of the following paper [Cephalometric Landmark Detection by Attentive Feature Pyramid Fusion and Regression-Voting](https://arxiv.org/pdf/1908.08841.pdf).
 
 ## Dataset 
