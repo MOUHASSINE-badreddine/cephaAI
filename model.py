@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from __future__ import print_function, division
 import torch
 import torch.nn as nn
@@ -380,4 +379,4 @@ class fusionVGG19(nn.Module):
         # coordinateMean1, coordinateMean2, coordinateDev = self.getCoordinate(y)
 
         return [y]
->>>>>>> f7c4412526e0fda9c644e978de22ebafbf852735
+
