@@ -27,7 +27,7 @@ path/to/cephalometric
 			301.bmp
 			...
 ````
-## Configuration and requirement
+## Configuration and requirements
 In the cepphaAI we're using the following frameworks:
   * numpy~=1.23.3
   * streamlit~=1.13.0
