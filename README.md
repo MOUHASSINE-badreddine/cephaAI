@@ -41,11 +41,10 @@ In the cepphaAI we're using the following frameworks:
 You can see the following [Kaggle Notebook]().
 ## Demo
 You can test our app on the following link : [cephaAI-streamlit-app](https://mouhassine-badreddine-cephaai-main-pzom8x.streamlitapp.com/)
-```
-![]((https://i.ibb.co/1fhg7mv/Animation-min.gif)
-```
-## Reference
 
+<img src="https://i.ibb.co/xSPkX7C/Animation-min.gif" alt="Animation-min" border="0">
+## Reference
+```
 @inproceedings{chen2019cephalometric,
   title={Cephalometric landmark detection by attentive feature pyramid fusion and regression-voting},
   author={Chen, Runnan and Ma, Yuexin and Chen, Nenglun and Lee, Daniel and Wang, Wenping},
@@ -54,4 +53,4 @@ You can test our app on the following link : [cephaAI-streamlit-app](https://mou
   year={2019},
   organization={Springer}
 }
-
+```
