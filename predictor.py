@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import torchvision
 from PIL import *
 from model import fusionVGG19
@@ -44,12 +43,7 @@ class ToTensor(object):
     """Convert ndarrays in sample to Tensors."""
 
     def __call__(self, sample):
-        # image, tlandmarks, targetMaps = sample['image'], sample['landmarks'], sample['targetMaps']
         image = sample['image']
-
-        # swap color axis because
-        # numpy image: H x W x C
-        # torch image: C X H X W
         image = image.transpose((2, 0, 1))
         return torch.from_numpy(image).float()
 
@@ -67,11 +61,9 @@ class Rescale(object):
         self.output_size = output_size
 
     def __call__(self, sample):
-        # image, landmarks, targetMaps = sample['image'], sample['landmarks'], sample['targetMaps']
 
         image = sample
         h, w = image.shape[:2]
-        # print (h, w)
         if isinstance(self.output_size, int):
             if h > w:
                 new_h, new_w = self.output_size * h / w, self.output_size
@@ -108,7 +100,6 @@ def get_predicted_heatmaps(image):
 
 
 def regression_voting(heatmaps, R):
-    # print("11", time.asctime())
     topN = int(R * R * 3.1415926)
     heatmap = heatmaps[0]
     imageNum, featureNum, h, w = heatmap.size()
@@ -120,7 +111,6 @@ def regression_voting(heatmaps, R):
     Xmap = torch.round(heatmap[:, landmarkNum:landmarkNum * 2, :].data * R).long() * w
     Ymap = torch.round(heatmap[:, landmarkNum * 2:landmarkNum * 3, :].data * R).long()
     topkP, indexs = torch.topk(Pmap, topN)
-    # plt.imshow(Pmap.reshape(imageNum, landmarkNum, h,w)[0][0], cmap='gray', interpolation='nearest')
     for imageId in range(imageNum):
         for landmarkId in range(landmarkNum):
 
@@ -184,12 +174,7 @@ class ToTensor(object):
     """Convert ndarrays in sample to Tensors."""
 
     def __call__(self, sample):
-        # image, tlandmarks, targetMaps = sample['image'], sample['landmarks'], sample['targetMaps']
         image = sample['image']
-
-        # swap color axis because
-        # numpy image: H x W x C
-        # torch image: C X H X W
         image = image.transpose((2, 0, 1))
         return torch.from_numpy(image).float()
 
@@ -207,11 +192,9 @@ class Rescale(object):
         self.output_size = output_size
 
     def __call__(self, sample):
-        # image, landmarks, targetMaps = sample['image'], sample['landmarks'], sample['targetMaps']
 
         image = sample
         h, w = image.shape[:2]
-        # print (h, w)
         if isinstance(self.output_size, int):
             if h > w:
                 new_h, new_w = self.output_size * h / w, self.output_size
@@ -248,7 +231,6 @@ def get_predicted_heatmaps(image):
 
 
 def regression_voting(heatmaps, R):
-    # print("11", time.asctime())
     topN = int(R * R * 3.1415926)
     heatmap = heatmaps[0]
     imageNum, featureNum, h, w = heatmap.size()
@@ -260,7 +242,6 @@ def regression_voting(heatmaps, R):
     Xmap = torch.round(heatmap[:, landmarkNum:landmarkNum * 2, :].data * R).long() * w
     Ymap = torch.round(heatmap[:, landmarkNum * 2:landmarkNum * 3, :].data * R).long()
     topkP, indexs = torch.topk(Pmap, topN)
-    # plt.imshow(Pmap.reshape(imageNum, landmarkNum, h,w)[0][0], cmap='gray', interpolation='nearest')
     for imageId in range(imageNum):
         for landmarkId in range(landmarkNum):
 
@@ -278,4 +259,3 @@ def regression_voting(heatmaps, R):
     return predicted_landmarks
 
 
->>>>>>> f7c4412526e0fda9c644e978de22ebafbf852735
