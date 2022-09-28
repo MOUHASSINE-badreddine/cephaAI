@@ -42,8 +42,7 @@ You can see the following [Kaggle Notebook]().
 ## Demo
 You can test our app on the following link : [cephaAI-streamlit-app](https://mouhassine-badreddine-cephaai-main-pzom8x.streamlitapp.com/)
 
-<img src="https://i.ibb.co/VWr1Jqj/Animation-min.gif" alt="Animation-min">
-
+<img src="https://i.ibb.co/VWr1Jqj/Animation-min.gif" alt="Animation-min" border="0">
 ## Reference
 ```
 @inproceedings{chen2019cephalometric,
